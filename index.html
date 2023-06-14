@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/responsive_colors.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>WildColors</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.png" alt=""></div>
+        <div class="Input">
+            <input type="text" class="color_input" id="color_input" placeholder="Type colour or colour code you want">
+            <button class="submit_btn" id="submit_btn" onclick="select_color()">Submit</button>
+        </div>
+    </header>
+    <hr>
+    <div class="colors">
+        <div class="color_btn">
+            <button class="color" value="red" onclick="Color(value)">Red</button>
+            <button class="color" value="yellow" onclick="Color(value)">Yellow</button>
+            <button class="color" value="green" onclick="Color(value)">Green</button>
+            <button class="color" value="purple" onclick="Color(value)">Purple</button>
+            <button class="color" value="pink" onclick="Color(value)">Pink</button>
+            <button class="color" value="Black" onclick="Color(value)">Black</button>
+            <button class="color" value="White" onclick="Color(value)">White</button>
+            <button class="color" value="Gray" onclick="Color(value)">Gray</button>
+            <button class="color" value="orange" onclick="Color(value)">Orange</button>
+        </div>
+        <div class="color_board" id="color_board">
+            <p class="para">Everywhere you go, you see colors: white clouds in the sky, green vegetation inching up gray
+                stone structures and red brick buildings, grounding brown soil beneath your feet. You don’t just see
+                these colors…you feel them.
+
+                Skilled designers tap into the emotions colors make us feel when they choose the colors for their work.
+                It’s no coincidence that so many fast food logos are red and so many sustainable brands use green in
+                their designs—red can induce hunger and green, the color of healthy plant life, reminds us of the
+                environment. As an entrepreneur or a designer yourself, understanding the science and art of color
+                meanings can help you create more effective, memorable designs.</p>
+        </div>
+    </div>
+    <script src="script/colors.js"></script>
+</body>
+
+</html>
