@@ -8,19 +8,38 @@
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/responsive_colors.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-    <title>WildColors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<title>WildColors-Change the colours the you want</title>
 </head>
 
 <body>
     <header>
-        <div class="logo"><img src="images/logo.png" alt=""></div>
+        <!-- <div class="logo"><img src="images/logo.png" alt=""></div>
         <div class="Input">
             <input type="text" class="color_input" id="color_input" placeholder="Type colour or colour code you want">
             <button class="submit_btn" id="submit_btn" onclick="select_color()">Submit</button>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <img src="images/logo.png" class="img-fluid logo" alt="img">
+                <a class="navbar-brand" href="#">WildColors</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 color_input" type="search"  id="color_input" placeholder="Type colour or colour code you want" aria-label="Search">
+                        <button class="btn btn-outline-light" id="submit_btn" onclick="select_color(event)">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-    <hr>
-    <div class="colors">
+    <div class="colors container">
         <div class="color_btn">
             <button class="color" value="red" onclick="Color(value)">Red</button>
             <button class="color" value="yellow" onclick="Color(value)">Yellow</button>
@@ -45,6 +64,9 @@
         </div>
     </div>
     <script src="script/colors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

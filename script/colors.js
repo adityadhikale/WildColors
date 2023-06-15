@@ -23,8 +23,9 @@ input.addEventListener('keyup', (event)=> {
     }
 });
 
-const select_color = () => {
 
+const select_color = (event) => {
+    event.preventDefault(); 
     var color = document.getElementById("color_input").value;
     console.log(color);
     console.log(typeof (color))
