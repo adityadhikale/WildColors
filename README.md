@@ -1,1 +1,1 @@
-Visit WildColors now: [WildColors](https://wildcolors.netlify.app/)
+Visit PopColors now: [PopColors](https://wildcolors.netlify.app/)
